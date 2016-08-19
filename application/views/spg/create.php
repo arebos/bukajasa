@@ -1,13 +1,17 @@
 <h2><?php echo $title; ?></h2>
 
-<?php echo validation_errors(); ?>
-
-<?php echo form_open('spg/create'); ?>
-
-<div class="form-group">
-    <label for="name">Nama</label>
-    <input class="form-control" type="input" name="name" /><br />
+<div class="alert alert-danger" role="alert">
+	<?php echo validation_errors(); ?>
 </div>
-<button class="btn btn-default" type="submit" />Kirim Data SPG</button>
-
+<?php echo form_open_multipart('spg/create'); ?>
+<div class="form-group">
+    <label for="nama">Nama SPG/Usher/Talent</label>
+    <input type="input" name="nama" class="form-control" /><br />
+</div>
+<!-- Upload -->
+<div class="form-group">
+    <label for="foto">Upload Foto</label>
+    <input type="file" name="foto" size="20" class="form-control" /><br />
+</div><!-- upload -->
+<button class="btn btn-default" type="submit" />Upload</button>
 </form>

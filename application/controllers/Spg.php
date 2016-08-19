@@ -58,8 +58,8 @@ class Spg extends CI_Controller {
         {
                 show_404();
         }
-        $data['name'] = $data['spg_item']['name'];
-        $data['title'] = $data['name'] . ' | Bukajasa.co.id';
+        $data['nama'] = $data['spg_item']['nama'];
+        $data['title'] = $data['nama'] . ' | Bukajasa.co.id';
 
         $this->load->view('templates/header', $data);
         $this->load->view('spg/view', $data);
@@ -70,11 +70,12 @@ class Spg extends CI_Controller {
 	{
 		$this->load->helper('form');
 		$this->load->library('form_validation');
+        $this->load->helper('url_helper');
 
-		$data['title'] = 'Input Nama SPG';
+		$data['title'] = 'Input Data SPG/Usher/Talent';
 
-		$this->form_validation->set_rules('name', 'Name', 'required');
-	//	$this->form_validation->set_rules('text', 'Text', 'required');
+		$this->form_validation->set_rules('nama', 'Nama', 'required');
+		$this->form_validation->set_rules('foto', 'Foto', 'required');
 
 		if ($this->form_validation->run() === FALSE)
 		{
@@ -87,7 +88,7 @@ class Spg extends CI_Controller {
 			$this->spg_model->set_spg();
 			$this->load->view('templates/header', $data);
 			$this->load->view('spg/success');
-			$this->load->view('templates/header', $data);
+			$this->load->view('templates/footer', $data);
 		}
 	}
 }

@@ -9,8 +9,8 @@
 		<div class="row">
 			<?php foreach ($results as $spg): ?>
 				<div class="col-md-2 col-sm-3 col-xs-6">
-					<figure><img src="<?php echo '/assets/img/spg-usher/'.$spg->slug.'.jpg'; ?>" class="img-responsive" alt="<?php echo $spg->name; ?>" />
-					<figcaption><?php echo $spg->name; ?></figcaption></figure>
+					<figure><img src="<?php echo '/assets/img/spg-usher/'.$spg->slug.'.jpg'; ?>" class="img-responsive" alt="<?php echo $spg->nama; ?>" />
+					<figcaption><?php echo $spg->nama; ?></figcaption></figure>
 				</div>
 			<?php endforeach; ?>
 			<!-- Pagination Links -->

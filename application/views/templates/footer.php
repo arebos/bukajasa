@@ -21,20 +21,21 @@
                     </p>
                 </div>
                 <div class="footop col-md-3 col-sm-6">
-                    <h4>Contact us </h4>
-                    <p>PT. Senjaya Multikreasi Pratama<br>
+                    <h4>Fast Response</h4>
+                    <p><i class="fa fa-whatsapp"></i> 0856-1424-040 (Sena)</p>
+                    <p><i class="fa fa-whatsapp"></i> 0812-1342-1356 (Irwan)</p>
+                    <p><i class="fa fa-whatsapp"></i> 0853-1131-9907 (Syam)</p>
+                </div>
+                <div class="footop col-md-3 col-sm-6">
+                    <h4>Office </h4>
+                    <p><strong>Bukajasa.co.id</strong><br>
+                        PT. Senjaya Multikreasi Pratama<br>
                         Gedung Masindo Lt. 3<br>
                         Jl. Mampang Prapatan no. 73<br>
                         Jakarta Selatan 12190<br>
                         Telp : +62 21 7989671 <br>
                         Fax : +62 21 291221111 <br>
                     </p>
-                </div>
-                <div class="footop col-md-3 col-sm-6">
-                    <h4>Fast Response</h4>
-                    <p><i class="fa fa-whatsapp"></i> 0856-1424-040 (Sena)</p>
-                    <p><i class="fa fa-whatsapp"></i> 0812-1342-1356 (Irwan)</p>
-                    <p><i class="fa fa-whatsapp"></i> 0853-1131-9907 (Syam)</p>
                 </div>
             </div>
             <div class="footer-bottom row">

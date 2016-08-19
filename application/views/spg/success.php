@@ -1,15 +1,12 @@
-<h3>SPG Submision SUCCESSFUL!</h3>
-
-<h2>Masukkan Lagi Data SPG</h2>
-
-<?php echo validation_errors(); ?>
-
-<?php echo form_open('spg/create'); ?>
-
-<div class="form-group">
-    <label for="name">Nama</label>
-    <input class="form-control" type="input" name="name" /><br />
+<div class="alert alert-success" role="alert">
+	<i class="fa fa-thumbs-o-up"></i> Well done! Data SPG Berhasil Diupload!
 </div>
-<button class="btn btn-default" type="submit" />Kirim Data SPG</button>
 
-</form>
+<?php foreach ($upload_data as $item): ?>
+	<div class="col-sm-3 col-xs-6">
+		<figure><img src="<?php echo '/assets/img/spg-usher/'.$item->slug.'.jpg'; ?>" class="img-responsive" alt="<?php echo $item->nama; ?>" />
+		<figcaption><?php echo $item->nama; ?></figcaption></figure>
+	</div>
+<?php endforeach; ?>
+
+<h4><i class="fa fa-upload"></i> <?php echo anchor('/spg/create', 'Ingin Upload Lagi?'); ?></h4>

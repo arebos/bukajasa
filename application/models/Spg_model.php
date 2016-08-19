@@ -33,9 +33,9 @@ class Spg_model extends CI_Model {
 	public function set_spg()
 	{
 		$this->load->helper('url');
-		$slug = url_title($this->input->post('name'), 'dash', TRUE);
+		$slug = url_title($this->input->post('nama'), 'dash', TRUE);
 		$data = array(
-			'name' => $this->input->post('name'),
+			'nama' => $this->input->post('nama'),
 			'slug' => $slug,
 		);
 		return $this->db->insert('spg', $data);
